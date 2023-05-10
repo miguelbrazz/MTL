@@ -264,7 +264,7 @@ h5 {
 .mySwiper {
     position: relative;
     padding: 2em 0;
-    height: 70%;
+    height: 450px;
 }
 
 .swiper-slide {
@@ -380,7 +380,7 @@ footer ul a:hover {
 
 @media screen and (max-width:1000px) {
     .toggleMenu {
-        background-image: url(/media/open.svg);
+        background-image: url(media/open.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 30px;
@@ -397,7 +397,7 @@ footer ul a:hover {
     .toggleMenu.active {
         position: fixed;
         right: 5%;
-        background-image: url(/media/close.svg);
+        background-image: url(media/close.svg);
         background-size: 25px;
     }
 

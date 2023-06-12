@@ -154,13 +154,24 @@ nav a:hover::after {
 
 h1 {
     font-weight: 700;
-    font-size: clamp(40px, 5vw, 65px);
+    font-size: clamp(40px, 5vw, 70px);
+    line-height: clamp(45px, 5vw, 70px);
+}
+
+span {
+    font-weight: 700;
+    font-size: clamp(30px, 5vw, 45px);
     line-height: clamp(45px, 5vw, 70px);
 }
 
 p {
     font-size: 16px;
     padding: 1em 0;
+}
+
+.title {
+    font-size: 17px;
+    font-weight: 400;
 }
 
 .page-btn {

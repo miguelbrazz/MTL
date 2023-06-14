@@ -43,13 +43,18 @@ body::after {
 }
 
 img {
-    max-width: 100%;
+    max-width: 80%;
     object-fit: cover;
     transition: 0.3s ease-in-out;
     -webkit-transition: 0.3s ease-in-out;
     -moz-transition: 0.3s ease-in-out;
     -ms-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
+}
+
+.imgrow {
+    margin-top: -30px;
+    margin-right: -60px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -189,7 +194,33 @@ p {
     -o--border-radius: 10px 0px 10px 0px;
 }
 
+.page-btn2 {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--cl--3--);
+    text-transform: capitalize;
+    outline: 1px solid var(--cl--6--);
+    background: var(--cl--6--);
+    padding: 0.5em 1em;
+    border-radius: 0px 10px 0px 10px;
+    -webkit-border-radius: 0px 10px 0px 10px;
+    -moz--border-radius: 0px 10px 0px 10px;
+    -ms--border-radius: 0px 10px 0px 10px;
+    -o--border-radius: 0px 10px 0px 10px;
+}
+
 .page-btn:hover {
+    background: transparent;
+    color: var(--cl--6--);
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.page-btn2:hover {
     background: transparent;
     color: var(--cl--6--);
     border-radius: 0;
@@ -205,6 +236,7 @@ p {
 
 .work {
     position: relative;
+    margin-top: 80px;
     padding: 2em 0;
     overflow-x: hidden;
 }
@@ -231,6 +263,7 @@ p {
 
 .work .flex+.flex {
     padding-top: 2em;
+    margin-top: 60px;
     flex-wrap: wrap-reverse;
 }
 
@@ -387,6 +420,11 @@ footer ul a:hover {
     .container {
         max-width: 1200px;
     }
+
+    .imgrow {
+        margin-top: 0px;
+        margin-right: 0px;
+    }
 }
 
 @media screen and (max-width:1000px) {
@@ -398,11 +436,11 @@ footer ul a:hover {
         width: 30px;
         height: 30px;
         z-index: 1000;
-        transition: backgroud-size 0.3s ease-in-out;
-        -webkit-transition: backgroud-size 0.3s ease-in-out;
-        -moz-transition: backgroud-size 0.3s ease-in-out;
-        -ms-transition: backgroud-size 0.3s ease-in-out;
-        -o-transition: backgroud-size 0.3s ease-in-out;
+        transition: background-size 0.3s ease-in-out;
+        -webkit-transition: background-size 0.3s ease-in-out;
+        -moz-transition: background-size 0.3s ease-in-out;
+        -ms-transition: background-size 0.3s ease-in-out;
+        -o-transition: background-size 0.3s ease-in-out;
     }
 
     .toggleMenu.active {
@@ -442,5 +480,10 @@ footer ul a:hover {
 
     nav ul {
         flex-direction: column;
+    }
+
+    .imgrow {
+        margin-top: 0px;
+        margin-left: 0px;
     }
 }
